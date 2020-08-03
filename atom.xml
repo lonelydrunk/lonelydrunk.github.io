@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lonelydrunk.github.io</id>
     <title>独醉庐</title>
-    <updated>2020-08-03T11:09:44.422Z</updated>
+    <updated>2020-08-03T11:13:39.163Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lonelydrunk.github.io"/>
     <link rel="self" href="https://lonelydrunk.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://lonelydrunk.github.io/post/min-yan/</id>
         <link href="https://lonelydrunk.github.io/post/min-yan/">
         </link>
-        <updated>2020-08-03T11:07:03.000Z</updated>
+        <updated>2020-08-03T12:07:03.000Z</updated>
         <summary type="html"><![CDATA[<p>在我们美好集体生活中的一些话。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>在我们美好集体生活中的一些话。</p>
@@ -37,6 +37,36 @@
 8、ChaoPin一笑，生死难料；眉头一抬，人生白来。<br>
 9、放的水多了，成了水鬼。<br>
 10、众人皆醉我独醒。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[代码]]></title>
+        <id>https://lonelydrunk.github.io/post/dai-ma/</id>
+        <link href="https://lonelydrunk.github.io/post/dai-ma/">
+        </link>
+        <updated>2020-08-03T11:11:26.000Z</updated>
+        <summary type="html"><![CDATA[<p>一些有用的代码，持续更新。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一些有用的代码，持续更新。</p>
+<!-- more -->
+<p>1、<code>document.body.contentEditable='true';</code>用法：打开chrome，按F12（或右键选择检查），<img src="https://lonelydrunk.github.io/post-images/1596453123153.png" alt="" loading="lazy">选择Console，将代码粘贴，回车，你就可以更改网站所有内容了！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[观点]]></title>
+        <id>https://lonelydrunk.github.io/post/guan-dian/</id>
+        <link href="https://lonelydrunk.github.io/post/guan-dian/">
+        </link>
+        <updated>2020-08-03T11:09:52.000Z</updated>
+        <content type="html"><![CDATA[<p>1、希望是什么？是娼妓：<br>
+　 她对谁都蛊惑，将一切都献给；<br>
+　 待你牺牲了极多的宝贝——<br>
+　 你的青春——她就抛弃你。<br>
+2、时间就像海绵里的水，只要愿挤，总还是有的。<br>
+3、倘只看书，便变成书橱。<br>
+4、其实地上本没有路，走的人多了，也便成了路。<br>
+5、哪里有天才，我只不过是把别人喝咖啡的时间都用在工作上了。 <br>
+6、沉着、勇猛、有辨别、不自私。 8、愈艰难，就愈要做。改革，是向来没有一帆风顺的。</p>
 ]]></content>
     </entry>
 </feed>
