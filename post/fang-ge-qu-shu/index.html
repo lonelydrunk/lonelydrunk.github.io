@@ -4,7 +4,7 @@
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>杰哥的题解集</title>
+<title>方格取数 | 杰哥的题解集</title>
 
 <link rel="shortcut icon" href="https://lonelydrunk.github.io/favicon.ico?v=1605096597542">
 
@@ -25,11 +25,11 @@
 
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
-    <div class="main-content">
-        <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -85,105 +85,107 @@
     </div>
 </nav>
 
-
-        <div class="post-list-container">
-    <div class="post-inner">
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://lonelydrunk.github.io/post/fang-ge-qu-shu/">
-                            <span class="post-title gt-c-content-color-first">方格取数</span>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    方格取数
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-11-11 ·
+                    </time>
+                    
+                        <a href="https://lonelydrunk.github.io/tag/CBrW_68ey/" class="post-tags">
+                            # CSP-2020-J
                         </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-11-11 ·
-                        </time>
-                        
-                            <a href="https://lonelydrunk.github.io/tag/CBrW_68ey/" class="post-tag">
-                                # CSP-2020-J
-                            </a>
-                        
-                    </div>
+                    
                 </div>
-                
-                    <a href="https://lonelydrunk.github.io/post/fang-ge-qu-shu/" class="post-feature-image"
-                       style="background-image: url('https://lonelydrunk.github.io/post-images/fang-ge-qu-shu.jpeg')">
-                    </a>
-                
+                <div class="post-content">
+                    <pre><code class="language-c++">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+const int MAXN=1001;
+long long dp[MAXN][MAXN];
+long long a[MAXN][MAXN] ;
+int main(){
+	int n,m;
+	cin&gt;&gt;n&gt;&gt;m;
+	for(int i=1;i&lt;=n;i++){
+		for(int j=1;j&lt;=m;j++){
+			cin&gt;&gt;a[i][j];
+		}
+	}
+	for(int j=1;j&lt;=m;j++){
+		for(int i=1;i&lt;=n;i++){
+			dp[i][j]=dp[i][j-1]+a[i][j];
+		}
+		long long res=dp[1][j-1] + a[1][j];
+		for(int i=2;i&lt;=n;i++){
+			dp[i][j]=max(dp[i][j],res+a[i][j]);
+			res=max(dp[i][j-1],res)+a[i][j];
+		}
+		res=dp[n][j-1]+a[n][j];
+		for (int i=n-1;i&gt;=1;i--){
+			dp[i][j]=max(dp[i][j],res+a[i][j]);
+			res=max(dp[i][j-1],res)+a[i][j] ;
+		}
+	}
+	cout&lt;&lt;dp[n][m]&lt;&lt;endl;
+	return 0;
+}
+</code></pre>
+<p>这题不加注释，懂的都懂，不懂的也不多解释。。。</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://lonelydrunk.github.io/post/zhi-bo-huo-jiang/" class="post-title gt-a-link">
+                    直播获奖
+                </a>
             </div>
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://lonelydrunk.github.io/post/zhi-bo-huo-jiang/">
-                            <span class="post-title gt-c-content-color-first">直播获奖</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-11-11 ·
-                        </time>
-                        
-                            <a href="https://lonelydrunk.github.io/tag/CBrW_68ey/" class="post-tag">
-                                # CSP-2020-J
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://lonelydrunk.github.io/post/zhi-bo-huo-jiang/" class="post-feature-image"
-                       style="background-image: url('https://lonelydrunk.github.io/post-images/zhi-bo-huo-jiang.jpeg')">
-                    </a>
-                
-            </div>
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://lonelydrunk.github.io/post/you-xiu-de-chai-fen/">
-                            <span class="post-title gt-c-content-color-first">优秀的拆分</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-11-11 ·
-                        </time>
-                        
-                            <a href="https://lonelydrunk.github.io/tag/CBrW_68ey/" class="post-tag">
-                                # CSP-2020-J
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://lonelydrunk.github.io/post/you-xiu-de-chai-fen/" class="post-feature-image"
-                       style="background-image: url('https://lonelydrunk.github.io/post-images/you-xiu-de-chai-fen.jpeg')">
-                    </a>
-                
-            </div>
-        
-    </div>
-</div>
 
-        <div class="pagination-container">
-    
-    
-</div>
+        
+            <span id="/post/" class="leancloud_visitors" data-flag-title="方格取数">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+        
 
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'SGcqn2zV9hpNHUeH3UT5rQEd-MdYXbMMI',
+		appKey: 'lNmWeclEymcrUDJXDt8S2Bqs',
+		avatar: 'mp',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: '杰哥叫你来评论啦~',
+		visitor: true,
+	});
+</script>
+
+        
 
         <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">什么时候能不会掉发呢？</div>
