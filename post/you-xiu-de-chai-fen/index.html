@@ -4,7 +4,7 @@
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>关于 | 独醉庐</title>
+<title>优秀的拆分 | 独醉庐</title>
 
 <link rel="shortcut icon" href="https://lonelydrunk.github.io/favicon.ico?v=1605093867273">
 
@@ -89,17 +89,39 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    关于
+                    优秀的拆分
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2019-01-25 ·
+                        · 2020-11-11 ·
                     </time>
                     
                 </div>
                 <div class="post-content">
-                    <p>众人皆醒，独我醉于孤寂。<br>
-谢谢支持！</p>
+                    <pre><code class="language-c++">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+int a[1000],cnt;
+int main(){
+	freopen(&quot;power.in&quot;,&quot;r&quot;,stdin);
+	freopen(&quot;power.out&quot;,&quot;w&quot;,stdout);//常规读写
+	int n;
+	cin&gt;&gt;n;
+	if(n%2!=0){cout&lt;&lt;-1&lt;&lt;endl;return 0;}//如果是奇数，排除
+	int res=1;//用来不断乘二
+	while(n!=0){
+		a[++cnt]=n%2*res;
+		n/=2;
+		res*=2;
+	}//循环，并存储每次的数据
+	for(int i=cnt;i&gt;=2;i--){
+		if(a[i]!=0){
+			cout&lt;&lt;a[i]&lt;&lt;' ';//输出啦
+		}
+	}
+	return 0;
+}
+</code></pre>
+<p>其实就是分类讨论而已。</p>
 
                 </div>
             </article>
@@ -108,7 +130,7 @@
         
 
         
-            <span id="/post/" class="leancloud_visitors" data-flag-title="关于">
+            <span id="/post/" class="leancloud_visitors" data-flag-title="优秀的拆分">
                 <em class="post-meta-item-text">阅读量 </em>
                 <i class="leancloud-visitors-count">0</i>
             </span>
