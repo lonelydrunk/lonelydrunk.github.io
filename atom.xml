@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lonelydrunk.github.io</id>
     <title>独醉庐</title>
-    <updated>2020-11-11T11:24:29.055Z</updated>
+    <updated>2020-11-11T11:31:02.415Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lonelydrunk.github.io"/>
     <link rel="self" href="https://lonelydrunk.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://lonelydrunk.github.io/images/avatar.png</logo>
     <icon>https://lonelydrunk.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 独醉庐</rights>
+    <entry>
+        <title type="html"><![CDATA[直播获奖]]></title>
+        <id>https://lonelydrunk.github.io/post/zhi-bo-huo-jiang/</id>
+        <link href="https://lonelydrunk.github.io/post/zhi-bo-huo-jiang/">
+        </link>
+        <updated>2020-11-11T11:26:14.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[优秀的拆分]]></title>
         <id>https://lonelydrunk.github.io/post/you-xiu-de-chai-fen/</id>

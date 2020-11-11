@@ -4,7 +4,7 @@
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>独醉庐</title>
+<title>直播获奖 | 独醉庐</title>
 
 <link rel="shortcut icon" href="https://lonelydrunk.github.io/favicon.ico?v=1605094246062">
 
@@ -25,11 +25,11 @@
 
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
-    <div class="main-content">
-        <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -85,60 +85,96 @@
     </div>
 </nav>
 
-
-        <div class="post-list-container">
-    <div class="post-inner">
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://lonelydrunk.github.io/post/zhi-bo-huo-jiang/">
-                            <span class="post-title gt-c-content-color-first">直播获奖</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-11-11 ·
-                        </time>
-                        
-                    </div>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    直播获奖
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-11-11 ·
+                    </time>
+                    
                 </div>
-                
+                <div class="post-content">
+                    <pre><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstdio&gt;
+using namespace std;
+int main(){
+	freopen(&quot;live.in&quot;,&quot;r&quot;,stdin);
+	freopen(&quot;live.out&quot;,&quot;w&quot;,stdout);//常规读写
+	int i,n,w,tong[10005]={0};//桶排序准备
+	cin&gt;&gt;n&gt;&gt;w;
+	for(i=1;i&lt;=n;i++){
+		int x;//申请临时变量
+		cin&gt;&gt;x;
+        tong[x]++;//桶排序，对应加1
+		int p=max(1,i*w/100);//每次获奖的人数
+		for(int i=600;i&gt;=0;i--){
+			p-=tong[i];//每次减一下
+			if(p&lt;=0){//如果比规定人数多，输出
+				cout&lt;&lt;i&lt;&lt;' ';
+				break;
+			}
+		}
+	}
+	return 0;//结束啦
+}
+</code></pre>
+<p>这题很水，由于分数有限制，&lt;=600分，桶排序就行。</p>
+<p>（用sort的我很悲伤）</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://lonelydrunk.github.io/post/you-xiu-de-chai-fen/" class="post-title gt-a-link">
+                    优秀的拆分
+                </a>
             </div>
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://lonelydrunk.github.io/post/you-xiu-de-chai-fen/">
-                            <span class="post-title gt-c-content-color-first">优秀的拆分</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-11-11 ·
-                        </time>
-                        
-                    </div>
-                </div>
-                
-            </div>
+
         
-    </div>
-</div>
+            <span id="/post/" class="leancloud_visitors" data-flag-title="直播获奖">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+        
 
-        <div class="pagination-container">
-    
-    
-</div>
+        
 
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'SGcqn2zV9hpNHUeH3UT5rQEd-MdYXbMMI',
+		appKey: 'lNmWeclEymcrUDJXDt8S2Bqs',
+		avatar: '',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: '记录感想',
+		visitor: true,
+	});
+</script>
+
+        
 
         <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">众人皆醒，而我独醉于孤寂。</div>
