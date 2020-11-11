@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lonelydrunk.github.io</id>
     <title>独醉庐</title>
-    <updated>2020-10-03T07:13:37.889Z</updated>
+    <updated>2020-11-11T11:17:09.782Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lonelydrunk.github.io"/>
     <link rel="self" href="https://lonelydrunk.github.io/atom.xml"/>
@@ -10,33 +10,4 @@
     <logo>https://lonelydrunk.github.io/images/avatar.png</logo>
     <icon>https://lonelydrunk.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 独醉庐</rights>
-    <entry>
-        <title type="html"><![CDATA[民言]]></title>
-        <id>https://lonelydrunk.github.io/post/min-yan/</id>
-        <link href="https://lonelydrunk.github.io/post/min-yan/">
-        </link>
-        <updated>2020-08-03T12:07:03.000Z</updated>
-        <summary type="html"><![CDATA[<p>在我们美好集体生活中的一些话。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>在我们美好集体生活中的一些话。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[代码]]></title>
-        <id>https://lonelydrunk.github.io/post/dai-ma/</id>
-        <link href="https://lonelydrunk.github.io/post/dai-ma/">
-        </link>
-        <updated>2020-08-03T11:11:26.000Z</updated>
-        <summary type="html"><![CDATA[<p>一些有用的代码，持续更新。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>一些有用的代码，持续更新。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[观点]]></title>
-        <id>https://lonelydrunk.github.io/post/guan-dian/</id>
-        <link href="https://lonelydrunk.github.io/post/guan-dian/">
-        </link>
-        <updated>2020-08-03T11:09:52.000Z</updated>
-    </entry>
 </feed>
