@@ -6,7 +6,7 @@
 
 <title>关于 | 杰哥的题解集</title>
 
-<link rel="shortcut icon" href="https://lonelydrunk.github.io/favicon.ico?v=1605096710503">
+<link rel="shortcut icon" href="https://lonelydrunk.github.io/favicon.ico?v=1605097097642">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://lonelydrunk.github.io/styles/main.css">
@@ -77,7 +77,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1605096710503" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1605097097642" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -98,8 +98,76 @@
                     
                 </div>
                 <div class="post-content">
-                    <p>众人皆醒，独我醉于孤寂。<br>
-谢谢支持！</p>
+                    <p>众所周知，勇敢者敢于运行任何代码。</p>
+<p>来与你们亲爱的杰哥一起试试吧：</p>
+<pre><code class="language-c++">#include&lt;bits/stdc++.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;windows.h&gt;
+using namespace std;
+int main()
+{
+    system(&quot;color f0&quot;);//初始化控制台模样
+    system(&quot;title 关机软件工厂&quot;);//同上关机软件工厂
+    char c; 
+    cout&lt;&lt;&quot;欢迎来到关机软件工厂，这里有各种各样的关机bat文件&quot;&lt;&lt;endl;
+    Sleep(1000) ;//暂停1秒，主要是让这个软件变得不那么突兀怪异
+    cout&lt;&lt;&quot;建议您作死前先制造一个放弃关机的文件，不然......后果自负&quot;&lt;&lt;endl; 
+    Sleep(1000);
+    cout&lt;&lt;endl&lt;&lt;&quot;---------按键继续----------&quot; ;
+    c=getch();//读取(getch是不带回显，不带缓冲区的单个字符读入。
+    system(&quot;cls&quot;); //清屏
+    cout&lt;&lt;&quot;请问您需要什么关机文件?&quot;&lt;&lt;endl&lt;&lt;endl; 
+    Sleep(1000) ;
+    cout&lt;&lt;&quot;请输入对应编号&quot;&lt;&lt;endl&lt;&lt;&quot;1.定时关机&quot;&lt;&lt;endl&lt;&lt;&quot;2.立即关机(慎用!!!)&quot;&lt;&lt;endl&lt;&lt;&quot;3.放弃关机&quot;&lt;&lt;endl&lt;&lt;&quot;4.注销&quot;&lt;&lt;endl&lt;&lt;&quot;5.重启(慎用,too!!!)&quot;&lt;&lt;endl&lt;&lt;&quot;其他.我不需要,谢谢&quot;;
+    c=getch();//同上
+    system(&quot;cls&quot;);//同上
+    int a;
+    if(c=='1')
+    {
+        cout&lt;&lt;&quot;请问您需要定时多久关机？(请输入秒数)&quot;;
+        cin&gt;&gt;a;
+        system(&quot;cls&quot;);
+        cout&lt;&lt;&quot;搞定，您可以在当前文件夹下找到定时关机文件,再见&quot; ;
+         //因为这是在fropen之前的输出,所以会输出在控制台而不是文件中。
+        freopen(&quot;定时关机.bat&quot;,&quot;w&quot;,stdout);
+        //众所周知,可以用记事本输入一个shutdown在改变拓展名为bat改为批处理文件，然后便可实现关机。
+        cout&lt;&lt;&quot;shutdown -s -t &quot;&lt;&lt;a;
+        Sleep(1000) ;
+        return 0;
+    }
+    if(c=='2') 
+    {
+        system(&quot;cls&quot;);
+        cout&lt;&lt;&quot;搞定，您可以在当前文件夹下找到立即关机文件,再见&quot;;
+        freopen(&quot;立即关机.bat&quot;,&quot;w&quot;,stdout);
+        cout&lt;&lt;&quot;shutdown -s&quot;;
+        Sleep(1000) ;
+        return 0; 
+    }
+    if(c=='3') 
+    {
+        system(&quot;cls&quot;);
+        cout&lt;&lt;&quot;搞定，您可以在当前文件夹下找到放弃关机文件,再见&quot;;
+        freopen(&quot;放弃关机.bat&quot;,&quot;w&quot;,stdout);
+        cout&lt;&lt;&quot;shutdown -a&quot;;
+        Sleep(1000) ;
+        return 0; 
+    }
+    if(c=='4') 
+    {
+        system(&quot;cls&quot;);
+        cout&lt;&lt;&quot;搞定，您可以在当前文件夹下找到注销文件,再见&quot;;
+        freopen(&quot;注销.bat&quot;,&quot;w&quot;,stdout);
+        cout&lt;&lt;&quot;shutdown -l&quot;;
+        Sleep(1000) ;
+        return 0; 
+    }
+    system(&quot;cls&quot;);
+    cout&lt;&lt;&quot;好的，下次见！！！&quot;;
+    Sleep(1000) ;
+    return 0; 
+}
+</code></pre>
 
                 </div>
             </article>
