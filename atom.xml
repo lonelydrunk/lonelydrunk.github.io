@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lonelydrunk.github.io</id>
     <title>杰哥的题解集</title>
-    <updated>2020-11-11T12:18:21.135Z</updated>
+    <updated>2021-02-02T12:53:07.581Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lonelydrunk.github.io"/>
     <link rel="self" href="https://lonelydrunk.github.io/atom.xml"/>
     <subtitle>什么时候能不会掉发呢？</subtitle>
     <logo>https://lonelydrunk.github.io/images/avatar.png</logo>
     <icon>https://lonelydrunk.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 杰哥的题解集</rights>
+    <rights>All rights reserved 2021, 杰哥的题解集</rights>
     <entry>
         <title type="html"><![CDATA[方格取数]]></title>
         <id>https://lonelydrunk.github.io/post/fang-ge-qu-shu/</id>
